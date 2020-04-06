@@ -21,8 +21,4 @@ angles = rightTri(triIso);
 assert(angles(1) == 45)
 assert(angles(1) == angles(2))
  
-%% Test 3: 30-60-90 triangle
-angles = rightTri(tri306090);
-assert(angles(1) == 30)
-assert(angles(2) == 60)
-assert(angles(3) == 90)
+
