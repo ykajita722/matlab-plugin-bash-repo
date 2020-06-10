@@ -9,4 +9,4 @@ jobs:
       - checkout
       - run: wget -qO- --retry-connrefused https://storage.googleapis.com/matlabimagesus/public/install.sh | sudo -E bash
       - matlab/run-command: 
-          command: disp('Hello World')
+          command: disp('Hello World_1')
