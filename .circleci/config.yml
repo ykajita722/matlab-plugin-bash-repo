@@ -1,13 +1,13 @@
 version: 2.1
 orbs:
-  matlab: mathworks/matlab@dev:alpha
+  matlab: mathworks/matlab@0.1.1
 jobs:
   build:
     machine:
       image: ubuntu-1604:201903-01
     steps:
       - checkout
-      - run: wget -qO- --retry-connrefused https://storage.googleapis.com/matlabimagesus/public/install.sh | sudo -E bash
+      - matlab/install
       - matlab/run-command: 
-          command: disp('Hello World_1')
+          command: disp('Hello World')
           
