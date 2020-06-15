@@ -22,7 +22,7 @@ classdef SolverTest < matlab.unittest.TestCase
         function testImaginarySolution_fail(testCase)
             actSolution = quadraticSolver(1,2,10);
             expSolution = [-1+3i, -1-3i];
-            testCase.verifyEqual(actSolution,expSolution);
+            testCase.verifyEqual(actSolution,expSolution+1);
         end
     end
     
