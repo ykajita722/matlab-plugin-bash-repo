@@ -12,7 +12,6 @@ jobs:
       - matlab/run-tests:
           test-results-junit: test-results/matlab/results.xml
           code-coverage-cobertura: code-coverage/coverage.xml
-          source-folder: source-utilities
       - store_test_results:
           path: test-results
       - codecov/upload:
