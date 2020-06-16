@@ -9,5 +9,5 @@ jobs:
       - checkout
       - matlab/install
       - matlab/run-command: 
-          command: disp('Hello World');disp('Hello World2');disp("Hello World2");x=1+1;disp(x);
+          command: disp('Hello World');disp('Hello World2');disp("Hello World2");x=1+1;disp(x);plot(1:10, 1:10);doc assert; !echo hoge;
           
