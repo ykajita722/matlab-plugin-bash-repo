@@ -10,4 +10,5 @@ jobs:
       - matlab/install
       - matlab/run-command: 
           command: disp('Hello World')
+          command: disp('Hello World2')
           
